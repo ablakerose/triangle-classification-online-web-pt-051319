@@ -17,14 +17,14 @@ class Triangle
 
       elsif
         side_1 == side_2 && side_1 == side_3
-        self.kind == :equilateral
+        self.kind = :equilateral
 
       elsif
         side_1 == side_2 || side_1 == side_3 || side_2 == side_3
-        self.kind == :isosceles
+        self.kind = :isosceles
 
       elsif
-        self.kind == :scalene
+        self.kind = :scalene
 
       else
         put "No"
